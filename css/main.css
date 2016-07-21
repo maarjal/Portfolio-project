@@ -67,60 +67,17 @@ body {
   height: 100vh;
   width: 100vw; }
 
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  margin-top: 2%;
-  background: transparent;
-  border: 2px solid lightgrey;
-  font-size: 1em;
-  color: lightgrey;
-  padding: 1%;
-  outline: none;
-  -webkit-transition: all 0.5s ease-out;
-  -moz-transition: all 0.5s ease-out;
-  -ms-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
-
-.column:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1); }
-
-.column:hover .description {
-  opacity: 0.6;
-  transition: 1s ease; }
-
-.shrink:hover {
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-  transform: scale(1.2); }
-
-header {
-  background: url("../img/port-img.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top;
-  width: 100%;
-  text-align: center; }
-  header .header-text {
-    padding: 13% 0; }
-  header h1 {
-    color: lightgrey;
-    font-size: 3em; }
-  header a {
-    text-decoration: none;
-    color: lightgrey;
-    text-transform: uppercase;
-    padding: 2%; }
-  header a:hover {
-    text-decoration: underline; }
-
 nav {
   padding-right: 1%;
   display: flex;
   justify-content: flex-end; }
+  nav a {
+    text-decoration: none;
+    color: lightgrey;
+    text-transform: uppercase;
+    padding: 2%; }
+  nav a:hover {
+    text-decoration: underline; }
 
 li {
   margin-bottom: 5%; }
@@ -200,6 +157,49 @@ li {
 .burger-check:checked ~ .navigation {
   max-height: 500px;
   transition: max-height 0.5s ease-in-out; }
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  margin-top: 2%;
+  background: transparent;
+  border: 2px solid lightgrey;
+  font-size: 1em;
+  color: lightgrey;
+  padding: 1%;
+  outline: none;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
+
+.column:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.column:hover .description {
+  opacity: 0.6;
+  transition: 1s ease; }
+
+.shrink:hover {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2); }
+
+header {
+  background: url("../img/port-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  text-align: center; }
+  header .header-text {
+    padding: 13% 0; }
+  header h1 {
+    color: lightgrey;
+    font-size: 3em; }
 
 .wrap {
   width: 100%; }
