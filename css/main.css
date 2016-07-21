@@ -63,6 +63,7 @@ table {
   box-sizing: border-box; }
 
 body {
+  display: flex;
   height: 100vh;
   width: 100vw; }
 
@@ -135,6 +136,11 @@ li {
   @media screen and (max-width: 990px) {
     .nav-small {
       display: block; } }
+  @media screen and (max-width: 600px) {
+    .nav-small {
+      position: absolute;
+      top: 2%;
+      left: 83%; } }
 
 .burger {
   color: lightgrey;
@@ -196,8 +202,7 @@ li {
   transition: max-height 0.5s ease-in-out; }
 
 .wrap {
-  width: 100%;
-  height: 500em; }
+  width: 100%; }
 
 .column {
   position: relative;
@@ -237,5 +242,17 @@ li {
       margin-right: -50%;
       transform: translate(-50%, -50%);
       font-size: 2em; }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 3%;
+  background: #556c80; }
+  footer a {
+    padding: 2%;
+    color: lightgrey; }
+    @media screen and (max-width: 600px) {
+      footer a {
+        padding: 4%; } }
 
 /*# sourceMappingURL=main.css.map */

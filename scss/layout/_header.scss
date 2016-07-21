@@ -47,6 +47,11 @@ li {
   @media #{$brk-point-medium} {
     display: block;
   }
+  @media #{$brk-point-small} {
+    position: absolute;
+    top: 2%;
+    left: 83%;
+  }
 }
 
 

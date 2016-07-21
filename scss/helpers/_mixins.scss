@@ -31,3 +31,32 @@
   padding: 1%;
   outline: none;
 }
+
+// colored overlay on an image
+// @mixin colored-background-image($path) {
+//   position: relative;
+//   background-image: url($path);
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   z-index: -2;
+// }
+//
+// @mixin colored-background-overlay($color) {
+//   background-color: $color;
+//   opacity: $background-opacity;
+//   position: absolute;
+//   content: " ";
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+// }
+//
+// @mixin colored-background-image-overlay($color, $path) {
+//   @include colored-background-image($path);
+//   &:before {
+//     @include colored-background-overlay($blue);
+//   }
+// }
