@@ -20,3 +20,13 @@
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+
+// buttons
+@mixin button-styles {
+  margin-top: 2%;
+  background: transparent;
+  border: 2px solid lightgrey;
+  font-size: 1em;
+  color: lightgrey;
+  padding: 1%;
+}

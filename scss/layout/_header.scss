@@ -1,0 +1,16 @@
+header {
+  background: url("../img/port-img.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 30em;
+  text-align: center;
+  & h1 {
+    @extend %center;
+    padding-top: 17%;
+    display: block;
+    color: lightgrey;
+    font-size: 3em;
+  }
+}
