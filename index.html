@@ -10,11 +10,21 @@
     <div class="wrap">
       <!-- hero -->
       <header class="hero">
-        <nav tabindex="0">
-        <a href="#">About</a>
-        <a href="#">Work</a>
-        <a href="#">Contact</a>
-      </nav>
+        <nav class="main-menu">
+          <a href="#">About</a>
+          <a href="#">Work</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="nav-small">
+          <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+          <nav id="navigation1" class="navigation">
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>          
+        </div>
         <h1>Hello</h1>
         <button class="shrink" type="button" name="button">See work</button>
       </header>

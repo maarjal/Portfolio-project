@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-header h1, .wrap, .container {
+.wrap, .container {
   margin-left: auto;
   margin-right: auto; }
 
@@ -73,6 +73,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   font-size: 1em;
   color: lightgrey;
   padding: 1%;
+  outline: none;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -ms-transition: all 0.5s ease-out;
@@ -105,7 +106,6 @@ header {
   text-align: center; }
   header h1 {
     padding-top: 13%;
-    display: block;
     color: lightgrey;
     font-size: 3em; }
   header a {
@@ -113,10 +113,84 @@ header {
     color: lightgrey;
     text-transform: uppercase;
     padding: 2%; }
+  header a:hover {
+    text-decoration: underline; }
 
 nav {
+  padding-top: 1%;
+  padding-right: 1%;
   display: flex;
   justify-content: flex-end; }
+
+li {
+  margin-bottom: 5%; }
+
+.main-menu {
+  display: none; }
+
+.nav-small {
+  position: absolute;
+  top: 5%;
+  left: 88%; }
+
+.burger {
+  color: lightgrey;
+  display: inline-block;
+  border: 0;
+  background: none;
+  outline: 0;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 4px solid currentColor;
+  width: 28px;
+  transition: border-bottom 1s ease-in-out;
+  -webkit-transition: border-bottom 1s ease-in-out; }
+  .burger::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+  .burger:before {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger:after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid currentColor;
+    width: 100%;
+    margin-bottom: 5px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+.burger-check {
+  display: none; }
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out; }
+  .burger-check:checked ~ .burger:before {
+    transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+  .burger-check:checked ~ .burger:after {
+    transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out; }
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out; }
+
+.burger-check:checked ~ .navigation {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out; }
 
 .wrap {
   width: 95%;
