@@ -4,6 +4,10 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+.container {
+  margin-left: auto;
+  margin-right: auto; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -50,5 +54,45 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  height: 100vh;
+  width: 100vw; }
+
+.column:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.wrap {
+  width: 100%; }
+
+.container {
+  width: 100%; }
+
+.column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin: 0;
+  height: 100%;
+  overflow: hidden; }
+  .column:last-child {
+    margin-right: 0; }
+  .column img {
+    width: 100%;
+    max-width: 110%;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease; }
 
 /*# sourceMappingURL=main.css.map */
