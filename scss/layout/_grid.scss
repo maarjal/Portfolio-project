@@ -1,19 +1,19 @@
 .wrap {
-  width: 95%;
-  @extend %center;
-  border: 2px solid hotpink;
-  height: 500em;
-}
-
-.container {
   width: 100%;
   @extend %center;
+  height: 500em;
 }
 
 .column {
   position: relative;
   @include col-gutter(6, 0);
   overflow: hidden;
+  width: 50%;
+  @media #{$brk-point-small} {
+    width: 100%;
+    min-width: 400px;
+  }
+
   & img {
     width: 100%;
     max-width: 110%;

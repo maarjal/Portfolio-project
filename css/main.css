@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.wrap, .container {
+.wrap {
   margin-left: auto;
   margin-right: auto; }
 
@@ -102,10 +102,10 @@ header {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 30em;
   text-align: center; }
+  header .header-text {
+    padding: 13% 0; }
   header h1 {
-    padding-top: 13%;
     color: lightgrey;
     font-size: 3em; }
   header a {
@@ -117,7 +117,6 @@ header {
     text-decoration: underline; }
 
 nav {
-  padding-top: 1%;
   padding-right: 1%;
   display: flex;
   justify-content: flex-end; }
@@ -125,13 +124,17 @@ nav {
 li {
   margin-bottom: 5%; }
 
-.main-menu {
-  display: none; }
-
+@media screen and (max-width: 990px) {
+  .main-menu {
+    display: none; } }
 .nav-small {
+  display: none;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 88%; }
+  @media screen and (max-width: 990px) {
+    .nav-small {
+      display: block; } }
 
 .burger {
   color: lightgrey;
@@ -193,12 +196,8 @@ li {
   transition: max-height 0.5s ease-in-out; }
 
 .wrap {
-  width: 95%;
-  border: 2px solid hotpink;
+  width: 100%;
   height: 500em; }
-
-.container {
-  width: 100%; }
 
 .column {
   position: relative;
@@ -207,9 +206,14 @@ li {
   margin-right: 2.35765%;
   width: 48.82117%;
   margin: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 50%; }
   .column:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      min-width: 400px; } }
   .column img {
     width: 100%;
     max-width: 110%;

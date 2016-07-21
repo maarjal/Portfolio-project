@@ -4,11 +4,11 @@ header {
   background-size: cover;
   background-position: top;
   width: 100%;
-  height: 30em;
   text-align: center;
-
+  & .header-text {
+    padding: 13% 0;
+  }
   & h1 {
-    padding-top: 13%;
     color: lightgrey;
     font-size: 3em;
   }
@@ -24,7 +24,6 @@ header {
 }
 
 nav {
-  padding-top: 1%;
   padding-right: 1%;
   display: flex;
   justify-content: flex-end;
@@ -34,14 +33,20 @@ li {
   margin-bottom: 5%;
 }
 
-.main-menu {
-  display: none;
+@media #{$brk-point-medium} {
+  .main-menu {
+    display: none;
+  }
 }
 
 .nav-small {
+  display: none;
   position: absolute;
-  top: 5%;
+  top: 3%;
   left: 88%;
+  @media #{$brk-point-medium} {
+    display: block;
+  }
 }
 
 
