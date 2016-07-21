@@ -71,6 +71,10 @@ body {
   -webkit-transform: scale(1.1);
   transform: scale(1.1); }
 
+.column:hover .description {
+  opacity: 0.6;
+  transition: 1s ease; }
+
 .wrap {
   width: 100%; }
 
@@ -78,12 +82,12 @@ body {
   width: 100%; }
 
 .column {
+  position: relative;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 48.82117%;
   margin: 0;
-  height: 100%;
   overflow: hidden; }
   .column:last-child {
     margin-right: 0; }
@@ -94,5 +98,21 @@ body {
     -moz-transition: all 2s ease;
     -ms-transition: all 2s ease;
     transition: all 2s ease; }
+  .column .description {
+    background: black;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+    .column .description p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      font-size: 2em; }
 
 /*# sourceMappingURL=main.css.map */
