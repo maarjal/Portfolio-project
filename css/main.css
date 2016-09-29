@@ -307,6 +307,8 @@ header {
     .column {
       width: 100%;
       min-width: 400px; } }
+  .column a {
+    color: white; }
   .column img {
     width: 100%;
     max-width: 110%;
