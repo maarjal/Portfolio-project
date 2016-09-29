@@ -2,10 +2,10 @@ footer {
   display: flex;
   justify-content: flex-end;
   padding-right: 3%;
-  background: #556c80;
+  // border: 2px solid tomato;
   & a {
     padding: 2%;
-    color: lightgrey;
+    color: white;
     @media #{$brk-point-small} {
       padding: 4%;
     }

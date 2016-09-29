@@ -7,7 +7,7 @@ $(document).ready(function(){
   });
   $('.text').typeIt({
     strings: 'Maarja Laineste Front-End Developer',
-    speed: 250,
+    speed: 130,
     autoStart: true
   });
 

@@ -16,3 +16,29 @@
   -o-transform: scale(1.2);
   transform: scale(1.2);
 }
+
+.see-work:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.see-work {
+  // opacity: 0;
+  -webkit-animation: buttonFadeIn 600s ease-in-out;
+  -moz-animation: buttonFadeIn 600s ease-in-out;
+  -ms-animation: buttonFadeIn 600s ease-in-out;
+  animation: buttonFadeIn 600s ease-in-out;
+  animation-delay: 3s;
+}
+
+// @keyframes buttonFadeIn {
+//   1% {
+//     opacity: 1;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
