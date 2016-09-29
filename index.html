@@ -3,19 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Maarja Laineste Portfolio</title>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script src="https://use.fontawesome.com/cd2d23a162.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/main.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body>
     <div class="wrap">
       <!-- hero -->
       <header class="hero">
-        <nav class="main-menu">
+        <!-- <nav class="main-menu">
           <a href="#">About</a>
           <a href="#">Work</a>
           <a href="#">Contact</a>
-        </nav>
-        <div class="nav-small">
+        </nav> -->
+
+        <!-- real thing -->
+        <!-- <div class="nav-small">
           <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
           <nav id="navigation1" class="navigation">
             <ul>
@@ -24,7 +28,40 @@
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-        </div>
+        </div> -->
+
+        <!-- test -->
+        <!-- <div class="nav-small">
+          <input class="burger-check js-menu-trigger sliding-panel-button" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+          <nav id="navigation1" class="navigation js-menu sliding-panel-content">
+            <ul>
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="https://www.facebook.com/">Work</a></li>
+              <li><a href="javascript:void(0)">About</a></li>
+            </ul>
+          </nav>
+        <div class="js-menu-screen sliding-panel-fade-screen"></div>
+        </div> -->
+
+        <!-- test -->
+        <div class="move-hamburger">
+          <button type="button" class="js-menu-trigger sliding-panel-button">
+            <input class="burger-check" id="burger-check" type="checkbox"><label for="burger-check" class="burger"></label>
+          </button>
+
+          <nav class="js-menu sliding-panel-content">
+            <ul>
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="https://www.facebook.com/" target="_blank">Work</a></li>
+              <li><a href="javascript:void(0)">About</a></li>
+            </ul>
+          </nav>
+
+          <div class="js-menu-screen sliding-panel-fade-screen"></div>
+      </div>
+
+
+
         <div class="header-text">
           <h1>Hello</h1>
           <button class="shrink" type="button" name="button">See work</button>
@@ -36,7 +73,7 @@
           <div class="column">
             <img src="img/port-img.jpeg" alt="Picture of a house in a snowy winter weather" />
             <div class="description">
-              <p>Winter is coming</p>
+              <p>Did you wash your hands?</p>
             </div>
           </div>
           <div class="column">
