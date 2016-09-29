@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css?family=Chivo|Rubik";
 html {
   box-sizing: border-box; }
 
@@ -65,7 +66,8 @@ table {
 body {
   display: flex;
   height: 100vh;
-  width: 100vw; }
+  width: 100vw;
+  font-family: 'Chivo', sans-serif; }
 
 nav {
   padding-right: 1%;
@@ -326,12 +328,16 @@ body {
 
 .splash-content {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
   height: 85%;
-  width: 70%;
-  border: 2px solid tomato; }
+  width: 70%; }
   .splash-content h1, .splash-content h2 {
+    width: 100%;
+    padding: 0;
+    margin: 0;
     color: white;
-    font-size: 6em; }
+    font-size: 5em;
+    line-height: 1.3em; }
 
 /*# sourceMappingURL=main.css.map */
