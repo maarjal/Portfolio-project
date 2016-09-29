@@ -1,3 +1,23 @@
 @import "home";
 @import "work";
 @import "contact";
+
+body {
+  background: #E6C0BD;
+}
+
+
+.splash-content {
+  @extend %center;
+  display: flex;
+  // align-items: flex-end;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 70%;
+  border: 2px solid tomato;
+  & h1, h2 {
+    color: white;
+    font-size: 6em;
+  }
+}

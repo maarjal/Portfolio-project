@@ -4,7 +4,7 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-.wrap {
+.wrap, .splash-content {
   margin-left: auto;
   margin-right: auto; }
 
@@ -100,7 +100,7 @@ li {
       left: 83%; } }
 
 .burger {
-  color: lightgrey;
+  color: white;
   display: inline-block;
   border: 0;
   background: none;
@@ -320,5 +320,18 @@ footer {
     @media screen and (max-width: 600px) {
       footer a {
         padding: 4%; } }
+
+body {
+  background: #E6C0BD; }
+
+.splash-content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 85%;
+  width: 70%;
+  border: 2px solid tomato; }
+  .splash-content h1, .splash-content h2 {
+    color: white;
+    font-size: 6em; }
 
 /*# sourceMappingURL=main.css.map */
