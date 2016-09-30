@@ -1,8 +1,6 @@
 .wrap {
   width: 100%;
   @extend %center;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .column {
@@ -10,7 +8,6 @@
   @include col-gutter(6, 0);
   overflow: hidden;
   width: 50%;
-  // height: 25em;
   @media #{$brk-point-small} {
     width: 100%;
     min-width: 400px;
@@ -23,7 +20,6 @@
   & img {
     width: 100%;
     max-width: 110%;
-    // height: auto;
     -webkit-transition: all 2s ease;
         -moz-transition: all 2s ease;
         -ms-transition: all 2s ease;

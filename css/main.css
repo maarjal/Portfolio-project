@@ -387,6 +387,8 @@ footer {
   align-items: center; }
   .envelope p {
     margin-left: 2%; }
+  .envelope:hover {
+    cursor: pointer; }
 
 .email {
   display: none; }

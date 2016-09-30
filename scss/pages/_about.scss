@@ -55,6 +55,9 @@
   & p {
     margin-left: 2%;
   }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .email {
