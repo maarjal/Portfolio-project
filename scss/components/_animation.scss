@@ -26,7 +26,7 @@
 }
 
 .see-work {
-  // opacity: 0;
+  opacity: 0;
   -webkit-animation: buttonFadeIn 600s ease-in-out;
   -moz-animation: buttonFadeIn 600s ease-in-out;
   -ms-animation: buttonFadeIn 600s ease-in-out;
@@ -34,11 +34,11 @@
   animation-delay: 3s;
 }
 
-// @keyframes buttonFadeIn {
-//   1% {
-//     opacity: 1;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
+@keyframes buttonFadeIn {
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}

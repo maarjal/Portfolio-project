@@ -270,12 +270,18 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   transform: scale(1.1); }
 
 .see-work {
+  opacity: 0;
   -webkit-animation: buttonFadeIn 600s ease-in-out;
   -moz-animation: buttonFadeIn 600s ease-in-out;
   -ms-animation: buttonFadeIn 600s ease-in-out;
   animation: buttonFadeIn 600s ease-in-out;
   animation-delay: 3s; }
 
+@keyframes buttonFadeIn {
+  1% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
 header {
   background: url("../img/port-img.jpeg");
   background-repeat: no-repeat;
@@ -359,7 +365,10 @@ body {
     padding: 0;
     margin: 0;
     color: white;
-    font-size: 5em;
+    font-size: 350%;
     line-height: 1.3em; }
+
+.container {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */
