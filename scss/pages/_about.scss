@@ -1,0 +1,52 @@
+.about-content {
+  display: flex;
+  border: 2px solid tomato;
+  height: 80%;
+  margin-top: 2%;
+}
+
+.picture {
+  width: 20em;
+  height: 20em;
+  background: white;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: url("http://i.imgur.com/uz4B71w.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: -webkit-transform 1.3s ease-in-out;
+          transition:         transform 1.3s ease-in-out;
+  @media #{$brk-point-medium} {
+    width: 15em;
+    height: 15em;
+  }
+}
+
+.picture:hover {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.picture-div {
+  width: 40%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.intro-copy {
+  // background: white;
+  width: 55%;
+  border: 2px solid purple;
+  color: white;
+  // color: #4A4545;
+  & h1 {
+    font-size: 350%;
+    margin-bottom: 3%;
+  }
+  & p {
+    font-size: 150%;
+    line-height: 1.1em;
+  }
+}
