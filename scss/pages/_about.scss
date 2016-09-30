@@ -1,6 +1,5 @@
 .about-content {
   display: flex;
-  border: 2px solid tomato;
   height: 80%;
   margin-top: 2%;
 }
@@ -30,23 +29,34 @@
 
 .picture-div {
   width: 40%;
-  border: 2px solid white;
   display: flex;
   justify-content: center;
 }
 
 .intro-copy {
-  // background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 55%;
-  border: 2px solid purple;
   color: white;
-  // color: #4A4545;
   & h1 {
     font-size: 350%;
     margin-bottom: 3%;
   }
   & p {
     font-size: 150%;
-    line-height: 1.1em;
+    line-height: 1.2em;
   }
+}
+
+.envelope {
+  display: flex;
+  align-items: center;
+  & p {
+    margin-left: 2%;
+  }
+}
+
+.email {
+  display: none;
 }

@@ -340,7 +340,6 @@ footer {
 
 .about-content {
   display: flex;
-  border: 2px solid tomato;
   height: 80%;
   margin-top: 2%; }
 
@@ -367,20 +366,30 @@ footer {
 
 .picture-div {
   width: 40%;
-  border: 2px solid white;
   display: flex;
   justify-content: center; }
 
 .intro-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 55%;
-  border: 2px solid purple;
   color: white; }
   .intro-copy h1 {
     font-size: 350%;
     margin-bottom: 3%; }
   .intro-copy p {
     font-size: 150%;
-    line-height: 1.1em; }
+    line-height: 1.2em; }
+
+.envelope {
+  display: flex;
+  align-items: center; }
+  .envelope p {
+    margin-left: 2%; }
+
+.email {
+  display: none; }
 
 body {
   background: #E6C0BD; }

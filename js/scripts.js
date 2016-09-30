@@ -9,10 +9,15 @@ $(document).ready(function(){
     autoStart: true
   });
 
-  $(".see-work").click(function(event) {
+  $(".see-work").click(function() {
     $(".container").show("slow");
     $(".splash-content").addClass("after");
   });
-  event.preventDefault();
+
+
+  $("#envelope").click(function() {
+    $(".email").show("slow");
+
+  });
 
 });
